@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+    --black:#121117;
+    --grey:#24232b;
+    --green:#b2f9bc;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-container{
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color:white;
+  width: 350px;
+}
+.password-container{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey);
+    width: 350px;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.copy-icon{
+    width: 25px;
+    height: 25px;
+}
+.copy-icon:hover{
+    cursor: pointer;
+}
+.interface{
+    box-sizing: border-box;
+    background-color: var(--grey);
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    font-size: 12px;
+}
+.charlenvalue{
+    color: var(--green);
+    font-size: 20px;
+    font-weight: 500;
+}
+.range-des{
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.range{
+    width: 100%;
+    margin:15px 0;
+}
+.checkbox-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+ul li .check{ 
+  margin-right: 20px;
+}
+.stre-des{
+    color: #74727f;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    width: 100%;
+    height: 45px;
+    margin:15px 0;
+    padding: 0 20px;
+}
+.boton{
+    width: 100%;
+    height: 45px;
+}
+.strength{
+    border: 1px solid white;
+    width: 4px;
+    height: 16px;
+    margin: 0 2px;
+    background-color: var(--black);
+}
+#stre-text{
+    font-size: 15px;
+    margin-right: 10px;
+    color: white;
+}
+.level{
+    display: flex;
+}
+.boton{
+    background-color: #a4ffaf;
+    border: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 500;
+}
+.boton:hover{
+    background-color: var(--grey);
+    border: 1px solid #a4ffaf;
+    color: #a4ffaf;
+    cursor: pointer;
+}

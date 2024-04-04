@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <h3>Password generator</h3>
+        <div class="password-container">
+            <span id="password">P4$WOrD!</span>
+            <img src="/img/copy-icon.png" alt="" class="copy-icon" id="copy">
+        </div>
+
+        <div class="interface">
+            <div class="range-des">
+                <span class="charlentext">Character Length</span>
+                <span class="charlenvalue" id="valoractual">7</span>  
+            </div>
+            <input type="range" class="range" id="max" min="1" max="15" value="7">
+            <ul class="checkbox-list">
+                <li>
+                    <input type="checkbox" name="Uppercase" id="uppercase" class="check">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Lowercase" id="lowercase" class="check">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Numbers" id="numbers" class="check">
+                    <label for="numbers">Include Numbers</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Symbols" id="symbols" class="check">
+                    <label for="symbols">Include Symbols</label>
+                </li>
+            </ul>
+        
+            <div class="stre-des">
+                <span>STRENGTH</span>
+                <div class="level">
+                    <span id="stre-text">LOW</span>
+                    <div class="strength" id="level1"></div>
+                    <div class="strength" id="level2"></div>
+                    <div class="strength" id="level3"></div>
+                </div>
+            </div>
+
+            <button class="boton" onclick="generate()">GENERATE &#x2794;</button>
+
+        </div>
+
+    </div>
+  
+</body>
+</html>
